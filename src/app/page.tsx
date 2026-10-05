@@ -44,6 +44,17 @@ export default function Home() {
     };
   }, []);
 
+  // Auto-reset when user clears all inputs
+  const isInputEmpty = mainInput.trim().length === 0 && personChip.state === "idle" && timeframeChip.state === "idle" && visualChip.state === "idle";
+  
+  useEffect(() => {
+    if (isInputEmpty && hasSearched) {
+      setHasSearched(false);
+      setResults([]);
+      setErrorMsg(null);
+    }
+  }, [isInputEmpty, hasSearched]);
+
   const handlePersonChange = (data: ChipData) => {
     setPersonChip(data);
     if (data.state === "expanding") {
@@ -66,7 +77,7 @@ export default function Home() {
     }
   };
 
-  const isInputEmpty = mainInput.trim().length === 0 && personChip.state === "idle" && timeframeChip.state === "idle" && visualChip.state === "idle";
+
   const anyChipExpanding = personChip.state === "expanding" || timeframeChip.state === "expanding" || visualChip.state === "expanding";
   const placeholder = getPlaceholder(personChip.value, timeframeChip.value, visualChip.value);
 
