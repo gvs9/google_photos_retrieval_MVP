@@ -1,0 +1,352 @@
+[
+  {
+    "id": "1",
+    "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800",
+    "metadata": {
+      "people": ["David", "Sarah"],
+      "date": "2022-07-15",
+      "location": "beach"
+    },
+    "visual_tags": ["red checkered tablecloth", "eating messy food", "sitting near water", "outdoor dining", "summer", "candid", "sunshine"]
+  },
+  {
+    "id": "2",
+    "url": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800",
+    "metadata": {
+      "people": ["Emma", "Luca"],
+      "date": "2023-08-05",
+      "location": "beach"
+    },
+    "visual_tags": ["surfboards", "ocean waves", "swimwear", "sunglasses", "beach", "summer", "athletic"]
+  },
+  {
+    "id": "3",
+    "url": "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800",
+    "metadata": {
+      "people": ["Priya", "Carlos"],
+      "date": "2022-06-20",
+      "location": "city"
+    },
+    "visual_tags": ["street food", "colorful umbrellas", "crowded market", "summer festival", "ice cream", "bright sunshine", "outdoor stalls"]
+  },
+  {
+    "id": "4",
+    "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800",
+    "metadata": {
+      "people": ["James", "Maya"],
+      "date": "2023-07-30",
+      "location": "lake"
+    },
+    "visual_tags": ["kayaking", "life vests", "splashing water", "laughing", "summer adventure", "golden hour", "lake reflection"]
+  },
+  {
+    "id": "5",
+    "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800",
+    "metadata": {
+      "people": ["David", "Maya"],
+      "date": "2022-08-12",
+      "location": "park"
+    },
+    "visual_tags": ["picnic blanket", "fruit basket", "reading books", "dappled light", "lazy afternoon", "summer", "barefoot", "grass"]
+  },
+  {
+    "id": "6",
+    "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800",
+    "metadata": {
+      "people": ["Sarah", "Carlos"],
+      "date": "2023-06-15",
+      "location": "restaurant"
+    },
+    "visual_tags": ["rooftop dining", "city skyline", "cocktails", "summer evening", "fairy lights", "outdoor seating", "elegant dinner"]
+  },
+  {
+    "id": "7",
+    "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800",
+    "metadata": {
+      "people": ["Priya"],
+      "date": "2022-07-04",
+      "location": "mountains"
+    },
+    "visual_tags": ["hiking trail", "backpack", "wildflowers", "mountain view", "solo adventure", "summer hike", "blue sky", "steep path"]
+  },
+  {
+    "id": "8",
+    "url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800",
+    "metadata": {
+      "people": ["Emma", "James"],
+      "date": "2023-08-20",
+      "location": "city"
+    },
+    "visual_tags": ["music festival", "neon lights", "crowd", "dancing", "glitter", "night event", "summer", "colourful wristbands"]
+  },
+  {
+    "id": "9",
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    "metadata": {
+      "people": ["Luca", "Carlos"],
+      "date": "2022-07-22",
+      "location": "beach"
+    },
+    "visual_tags": ["sandcastles", "bright towels", "sunscreen", "shallow water", "summer", "family fun", "children playing", "buckets and spades"]
+  },
+  {
+    "id": "10",
+    "url": "https://images.unsplash.com/photo-1522336572468-97b06e8ef143?w=800",
+    "metadata": {
+      "people": ["Maya", "Sarah"],
+      "date": "2023-04-10",
+      "location": "garden"
+    },
+    "visual_tags": ["cherry blossoms", "picnic", "pastel dress", "spring afternoon", "golden light", "flowers", "pink petals", "outdoor"]
+  },
+  {
+    "id": "11",
+    "url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800",
+    "metadata": {
+      "people": ["David", "James"],
+      "date": "2022-03-28",
+      "location": "city"
+    },
+    "visual_tags": ["rain jackets", "puddles", "coffee cups", "walking together", "overcast sky", "spring rain", "wet pavement", "umbrellas"]
+  },
+  {
+    "id": "12",
+    "url": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800",
+    "metadata": {
+      "people": ["Priya", "Emma"],
+      "date": "2023-05-15",
+      "location": "park"
+    },
+    "visual_tags": ["kite flying", "green grass", "light breeze", "spring sunshine", "laughing", "casual clothes", "open field", "blue sky"]
+  },
+  {
+    "id": "13",
+    "url": "https://images.unsplash.com/photo-1558636508-e0969431a816?w=800",
+    "metadata": {
+      "people": ["Luca"],
+      "date": "2022-04-03",
+      "location": "home"
+    },
+    "visual_tags": ["birthday cake", "candles", "balloons", "colorful decorations", "celebration", "spring", "indoor party", "family gathering"]
+  },
+  {
+    "id": "14",
+    "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800",
+    "metadata": {
+      "people": ["Carlos", "Maya"],
+      "date": "2023-03-20",
+      "location": "café"
+    },
+    "visual_tags": ["latte art", "cozy window seat", "spring flowers on table", "books", "warm lighting", "indoor", "coffee shop", "rainy day outside"]
+  },
+  {
+    "id": "15",
+    "url": "https://images.unsplash.com/photo-1490750967868-88df5691cc0e?w=800",
+    "metadata": {
+      "people": ["Sarah", "David"],
+      "date": "2022-05-08",
+      "location": "garden"
+    },
+    "visual_tags": ["flowers bouquet", "backyard", "sunny afternoon", "hugging", "spring celebration", "Mother's Day", "roses", "green lawn"]
+  },
+  {
+    "id": "16",
+    "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800",
+    "metadata": {
+      "people": ["James", "Emma"],
+      "date": "2023-04-22",
+      "location": "mountains"
+    },
+    "visual_tags": ["spring hike", "snow patches", "waterfall", "fresh green trees", "trail", "adventure", "mountain stream", "hiking boots"]
+  },
+  {
+    "id": "17",
+    "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800",
+    "metadata": {
+      "people": ["Priya", "Luca"],
+      "date": "2022-05-25",
+      "location": "restaurant"
+    },
+    "visual_tags": ["graduation dinner", "formal clothes", "wine glasses", "celebration", "indoor dining", "family", "candles", "toasting"]
+  },
+  {
+    "id": "18",
+    "url": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
+    "metadata": {
+      "people": ["Carlos"],
+      "date": "2023-03-05",
+      "location": "airport"
+    },
+    "visual_tags": ["luggage", "departure gate", "spring travel", "backpack", "excited", "solo trip", "boarding pass", "terminal windows"]
+  },
+  {
+    "id": "19",
+    "url": "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?w=800",
+    "metadata": {
+      "people": ["Emma", "David"],
+      "date": "2022-10-15",
+      "location": "park"
+    },
+    "visual_tags": ["orange leaves", "jumping in leaf pile", "cozy sweaters", "autumn afternoon", "candid", "laughing", "fallen leaves", "colorful trees"]
+  },
+  {
+    "id": "20",
+    "url": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=800",
+    "metadata": {
+      "people": ["Sarah", "James"],
+      "date": "2023-09-28",
+      "location": "mountains"
+    },
+    "visual_tags": ["autumn foliage", "hiking boots", "scenic overlook", "red and gold trees", "foggy morning", "backpack", "mountain trail", "autumn hike"]
+  },
+  {
+    "id": "21",
+    "url": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=800",
+    "metadata": {
+      "people": ["Maya", "Carlos"],
+      "date": "2022-11-03",
+      "location": "city"
+    },
+    "visual_tags": ["Halloween costumes", "pumpkins", "city street", "night", "trick-or-treat", "group photo", "autumn", "carved pumpkins"]
+  },
+  {
+    "id": "22",
+    "url": "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=800",
+    "metadata": {
+      "people": ["Priya", "Emma"],
+      "date": "2023-10-20",
+      "location": "home"
+    },
+    "visual_tags": ["Diwali celebration", "diyas", "rangoli", "traditional clothes", "sweets", "family gathering", "autumn festival", "warm light"]
+  },
+  {
+    "id": "23",
+    "url": "https://images.unsplash.com/photo-1519671282429-b8d4017fa58e?w=800",
+    "metadata": {
+      "people": ["Luca", "David"],
+      "date": "2022-09-12",
+      "location": "café"
+    },
+    "visual_tags": ["hot chocolate", "board games", "rainy window", "cozy interior", "autumn vibes", "friends", "indoor", "wooden table"]
+  },
+  {
+    "id": "24",
+    "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800",
+    "metadata": {
+      "people": ["James"],
+      "date": "2023-11-05",
+      "location": "lake"
+    },
+    "visual_tags": ["fishing trip", "mist on water", "early morning", "warm jacket", "autumn colours", "quiet", "solo", "rowing boat"]
+  },
+  {
+    "id": "25",
+    "url": "https://images.unsplash.com/photo-1453791052107-5c843da62d97?w=800",
+    "metadata": {
+      "people": ["Sarah", "Maya"],
+      "date": "2022-10-31",
+      "location": "restaurant"
+    },
+    "visual_tags": ["Halloween dinner", "costumes", "pumpkin decorations", "candles", "festive", "laughing", "autumn", "spooky decor"]
+  },
+  {
+    "id": "26",
+    "url": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800",
+    "metadata": {
+      "people": ["Carlos", "Priya"],
+      "date": "2023-09-15",
+      "location": "garden"
+    },
+    "visual_tags": ["harvest apples", "orchard", "baskets", "golden light", "autumn harvest", "family", "red apples", "outdoor activity"]
+  },
+  {
+    "id": "27",
+    "url": "https://images.unsplash.com/photo-1481437156560-3205f6a55735?w=800",
+    "metadata": {
+      "people": ["Emma"],
+      "date": "2022-11-20",
+      "location": "city"
+    },
+    "visual_tags": ["shopping bags", "holiday lights", "winter coat", "busy street", "Christmas market", "warm scarf", "late autumn", "festive stalls"]
+  },
+  {
+    "id": "28",
+    "url": "https://images.unsplash.com/photo-1548133750-129f5dd52e51?w=800",
+    "metadata": {
+      "people": ["David", "Carlos"],
+      "date": "2023-01-15",
+      "location": "ski resort"
+    },
+    "visual_tags": ["ski slopes", "snow gear", "goggles", "chairlift", "mountain peaks", "winter sports", "powder snow", "ski jackets"]
+  },
+  {
+    "id": "29",
+    "url": "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800",
+    "metadata": {
+      "people": ["Sarah", "Luca"],
+      "date": "2022-12-25",
+      "location": "home"
+    },
+    "visual_tags": ["Christmas tree", "wrapped gifts", "fireplace", "cozy pajamas", "family", "holiday lights", "winter", "festive morning"]
+  },
+  {
+    "id": "30",
+    "url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=800",
+    "metadata": {
+      "people": ["James", "Priya"],
+      "date": "2023-02-14",
+      "location": "restaurant"
+    },
+    "visual_tags": ["Valentine's Day", "roses", "candlelit table", "romantic dinner", "winter evening", "wine glasses", "red roses", "intimate setting"]
+  },
+  {
+    "id": "31",
+    "url": "https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=800",
+    "metadata": {
+      "people": ["Maya", "Emma"],
+      "date": "2022-12-31",
+      "location": "park"
+    },
+    "visual_tags": ["New Year countdown", "sparklers", "winter coats", "celebration", "midnight", "fireworks", "glowing sparkles", "city backdrop"]
+  },
+  {
+    "id": "32",
+    "url": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800",
+    "metadata": {
+      "people": ["David", "Sarah"],
+      "date": "2023-01-28",
+      "location": "ski resort"
+    },
+    "visual_tags": ["hot cocoa", "ski lodge", "fireplace", "après-ski", "warm drinks", "mountain view", "winter", "cozy indoor seating"]
+  },
+  {
+    "id": "33",
+    "url": "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=800",
+    "metadata": {
+      "people": ["Carlos"],
+      "date": "2022-12-10",
+      "location": "mountains"
+    },
+    "visual_tags": ["solo winter hike", "snow-covered trail", "heavy jacket", "snowfall", "peaceful", "foggy", "deep snow", "pine trees"]
+  },
+  {
+    "id": "34",
+    "url": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800",
+    "metadata": {
+      "people": ["Luca", "James"],
+      "date": "2023-02-05",
+      "location": "home"
+    },
+    "visual_tags": ["Super Bowl party", "TV screen", "pizza boxes", "team jerseys", "friends", "indoor gathering", "winter", "snacks on table"]
+  },
+  {
+    "id": "35",
+    "url": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?w=800",
+    "metadata": {
+      "people": ["Priya", "Maya"],
+      "date": "2022-12-20",
+      "location": "café"
+    },
+    "visual_tags": ["holiday coffee drinks", "red cups", "ugly sweaters", "festive decorations", "winter warmth", "laughing", "café interior", "Christmas lights"]
+  }
+]

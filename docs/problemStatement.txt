@@ -1,0 +1,71 @@
+# PROJECT TITLE: Guided "Memory Clue" Builder MVP (Google Photos Concept)
+# TECH STACK: Next.js (App Router), React, Tailwind CSS, Groq API (@groq/groq-sdk)
+
+## 1. PROJECT CONTEXT & PROBLEM STATEMENT
+We are building a dynamic, scaffolded query builder to replace the static search bar. Users self-censor their searches because of a "trust deficit" in AI capabilities. To solve this, we are explicitly scaffolding the UI to ask for multi-variable inputs (Person, Timeframe, Visual Detail) alongside a conversational input. 
+The app will take these inputs, pass them to a Groq LLM (acting as a translation layer), and search against a hardcoded JSON mock database of photos.
+
+## 2. MOCK DATABASE SCHEMA (photos.json)
+Generate a dummy file at `src/data/photos.json` containing 20 diverse photo objects using this exact schema:
+[
+  {
+    "id": "1",
+    "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "metadata": {
+      "people": ["David", "Sarah"],
+      "date": "2022-07-15",
+      "location": "beach"
+    },
+    "visual_tags": ["red checkered tablecloth", "eating messy food", "sitting near water", "outdoor dining", "summer", "candid"]
+  }
+]
+Populate it with varied data (different people, seasons, actions, and locations).
+
+## 3. FRONTEND UI & STATE LOGIC
+Create a main search interface in `src/app/page.tsx`.
+Requirements:
+1.  **Main Input:** A large text input (placeholder: "What do you remember? Type anything...").
+2.  **Dynamic Chips:** Below the input, render three chips: `[+ 👤 Add Person]`, `[+ 📅 Timeframe]`, `[+ 🎨 Visual Detail]`.
+3.  **Interaction:** 
+    *   Clicking a chip expands it into a small inline text input.
+    *   When the user submits a value in the chip, it collapses into a filled state (e.g., `[📅 Summer 2022 ⓧ]`) and locks to the left.
+    *   The placeholder of the Main Input dynamically updates (e.g., "You've added a time. Who was there?").
+4.  **Submission:** When the user clicks "Search", gather the main input text and the values of any filled chips into this JSON payload:
+    `{ "conversational_text": string, "clues": { "person": string | null, "timeframe": string | null, "visual_detail": string | null } }`
+    Send this payload to `POST /api/search`.
+5.  **Loading & Results:** Show a loading state ("Translating memory..."), then render the returned images in a CSS grid.
+
+## 4. BACKEND API & GROQ LLM TRANSLATION
+Create a Next.js API route at `src/app/api/search/route.ts`.
+Requirements:
+1.  Initialize the Groq SDK using `process.env.GROQ_API_KEY`.
+2.  Use the model `llama3-70b-8192` (or `mixtral-8x7b-32768`).
+3.  Enforce JSON mode using `response_format: { type: "json_object" }`.
+
+Pass the incoming payload to Groq using this EXACT System Prompt:
+"""
+You are the query translation engine for a photo retrieval system. 
+Translate the user's fragmented memory (conversational text + structured clues) into a JSON search query.
+
+RULES:
+1. Expand vague temporal terms (e.g., "Summer 2022" -> "2022-06-01 to 2022-08-31").
+2. Translate abstract activities into concrete visual realities (e.g., "eating something messy" -> "food, dirty, eating").
+3. If a variable is missing, output null.
+
+OUTPUT FORMAT (Valid JSON only):
+{
+  "metadata_filters": {
+    "people": ["array of strings"],
+    "location_inference": ["array of strings"]
+  },
+  "semantic_search_string": "comma-separated string combining visual details and actions"
+}
+"""
+
+## 5. THE MATCHER LOGIC
+After receiving the JSON response from Groq:
+1. Import `photos.json`.
+2. Write a lightweight Javascript filtering function:
+   - Filter photos if the `metadata_filters.people` matches (if provided).
+   - Do a basic string inclusion or keyword overlap match between the LLM's `semantic_search_string` and the photo's `visual_tags`.
+3. Return the top matching photo objects back to the frontend to be rendered.
