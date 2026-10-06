@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Joyride, Step, CallBackProps, STATUS } from "react-joyride";
+import { Joyride, Step, EventData, STATUS } from "react-joyride";
 
 export default function OnboardingTour() {
   const [mounted, setMounted] = useState(false);
@@ -9,7 +9,6 @@ export default function OnboardingTour() {
 
   useEffect(() => {
     setMounted(true);
-    // Check if the user has already seen the tour
     const hasSeenTour = localStorage.getItem("hasSeenTour");
     if (!hasSeenTour) {
       setRun(true);
@@ -20,7 +19,7 @@ export default function OnboardingTour() {
     {
       target: "#tour-main-input",
       content: "Welcome! Describe a memory you are looking for in plain English. For example, 'drinking hot cocoa while it pours outside'.",
-      disableBeacon: true,
+      skipBeacon: true,
       placement: "bottom"
     },
     {
@@ -35,7 +34,7 @@ export default function OnboardingTour() {
     }
   ];
 
-  const handleJoyrideCallback = (data: CallBackProps) => {
+  const handleJoyrideCallback = (data: EventData) => {
     const { status } = data;
     const finishedStatuses: string[] = [STATUS.FINISHED, STATUS.SKIPPED];
     
@@ -52,17 +51,18 @@ export default function OnboardingTour() {
       steps={steps}
       run={run}
       continuous={true}
-      showProgress={true}
-      showSkipButton={true}
-      callback={handleJoyrideCallback}
+      onEvent={handleJoyrideCallback}
+      options={{
+        backgroundColor: '#FFFFFF', 
+        primaryColor: '#0B57D0',    
+        textColor: '#1A1C19',       
+        zIndex: 1000,
+        showProgress: true,
+        buttons: ['back', 'close', 'skip', 'primary'],
+        overlayColor: 'rgba(0, 0, 0, 0.8)'
+      }}
       styles={{
-        options: {
-          backgroundColor: '#FFFFFF', // Stark white to completely stand out against the dark app
-          primaryColor: '#0B57D0',    // Vivid Google Blue
-          textColor: '#1A1C19',       // Dark text for readability
-          zIndex: 1000,
-        },
-        buttonNext: {
+        buttonPrimary: {
           backgroundColor: '#0B57D0',
           color: '#FFFFFF',
           fontWeight: 'bold',
@@ -76,9 +76,6 @@ export default function OnboardingTour() {
           borderRadius: '16px',
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 8px 10px -6px rgba(0, 0, 0, 0.8)',
           border: '1px solid rgba(0,0,0,0.1)'
-        },
-        overlay: {
-          backgroundColor: 'rgba(0, 0, 0, 0.8)' // Make the rest of the app much darker so the white tooltip shines
         }
       }}
     />
