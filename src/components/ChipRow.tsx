@@ -42,7 +42,7 @@ export default function ChipRow({
   );
 
   return (
-    <div className="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs mb-space-sm">
+    <div id="tour-chip-row" className="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs mb-space-sm">
       {sorted.map((chip) => (
         <Chip
           key={chip.key}

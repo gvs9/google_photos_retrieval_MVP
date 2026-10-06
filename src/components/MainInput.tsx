@@ -8,7 +8,7 @@ interface MainInputProps {
 
 export default function MainInput({ value, onChange, placeholder, disabled, onEnter }: MainInputProps) {
   return (
-    <div className="relative mt-space-xs mb-space-sm bg-surface-container-low/70 rounded-DEFAULT p-space-sm shadow-inner transition-colors focus-within:bg-surface-container-high group">
+    <div id="tour-main-input" className="relative mt-space-xs mb-space-sm bg-surface-container-low/70 rounded-DEFAULT p-space-sm shadow-inner transition-colors focus-within:bg-surface-container-high group">
       <textarea
         id="memory-query-input"
         value={value}

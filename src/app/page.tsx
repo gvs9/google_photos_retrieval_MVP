@@ -6,6 +6,7 @@ import SearchButton from "@/components/SearchButton";
 import ChipRow from "@/components/ChipRow";
 import LoadingState from "@/components/LoadingState";
 import ResultsGrid from "@/components/ResultsGrid";
+import OnboardingTour from "@/components/OnboardingTour";
 import type { ChipData, Photo } from "@/types";
 
 import photosData from "@/data/photos.json";
@@ -154,6 +155,7 @@ export default function Home() {
 
   return (
     <>
+      <OnboardingTour />
       {errorMsg && (
         <div className="fixed top-20 left-1/2 -translate-x-1/2 bg-error-container/20 border border-error-container/50 text-error px-6 py-3 rounded-md font-medium z-[100] backdrop-blur-md shadow-lg flex items-center gap-3">
           <span>{errorMsg}</span>
@@ -197,7 +199,7 @@ export default function Home() {
             disabled={isLoading}
           />
 
-          <div className="flex items-center pt-space-sm bg-surface-container justify-end relative z-10">
+          <div id="tour-search-button" className="flex items-center pt-space-sm bg-surface-container justify-end relative z-10">
             <SearchButton
               onClick={handleSearch}
               isLoading={isLoading}
